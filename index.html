@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/hangman.css" media="screen">
+
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <div class="container">
+        <div id="image"></div>
+        <div id="secret-word"></div>
+        <div id="keyboard">
+            <div class="keys">
+                <button id="key-A" onclick="checkChosenLetter('A')">A</button>
+                <button id="key-B" onclick="checkChosenLetter('B')">B</button>
+                <button id="key-C" onclick="checkChosenLetter('C')">C</button>
+                <button id="key-D" onclick="checkChosenLetter('D')">D</button>
+                <button id="key-E" onclick="checkChosenLetter('E')">E</button>
+                <button id="key-F" onclick="checkChosenLetter('F')">F</button>
+                <button id="key-G" onclick="checkChosenLetter('G')">G</button>
+                <button id="key-H" onclick="checkChosenLetter('H')">H</button>
+                <button id="key-I" onclick="checkChosenLetter('I')">I</button>
+            </div>
+            <div class="keys">
+                <button id="key-J" onclick="checkChosenLetter('J')">J</button>
+                <button id="key-K" onclick="checkChosenLetter('K')">K</button>
+                <button id="key-L" onclick="checkChosenLetter('L')">L</button>
+                <button id="key-M" onclick="checkChosenLetter('M')">M</button>
+                <button id="key-N" onclick="checkChosenLetter('N')">N</button>
+                <button id="key-O" onclick="checkChosenLetter('O')">O</button>
+                <button id="key-P" onclick="checkChosenLetter('P')">P</button>
+                <button id="key-Q" onclick="checkChosenLetter('Q')">Q</button>
+                <button id="key-R" onclick="checkChosenLetter('R')">R</button>
+            </div>
+            <div class="keys">
+                <button id="key-S" onclick="checkChosenLetter('S')">S</button>
+                <button id="key-T" onclick="checkChosenLetter('T')">T</button>
+                <button id="key-U" onclick="checkChosenLetter('U')">U</button>
+                <button id="key-V" onclick="checkChosenLetter('V')">V</button>
+                <button id="key-W" onclick="checkChosenLetter('W')">W</button>
+                <button id="key-X" onclick="checkChosenLetter('X')">X</button>
+                <button id="key-Y" onclick="checkChosenLetter('Y')">Y</button>
+                <button id="key-Z" onclick="checkChosenLetter('Z')">Z</button>
+                <button id="btnRestart" onclick="">🔁</button>
+            </div>
+            <div id="space" class="keys">
+                <button id="key--" onclick="checkChosenLetter('-')">SPACE</button>
+            </div>
+        </div>
+
+        <div id="category"></div>
+        <div id="tips">
+            <p class="endText">Press 🔁 to restart</p>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" id="modal-body"></div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- End Modal -->
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
