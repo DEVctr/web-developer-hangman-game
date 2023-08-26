@@ -25,7 +25,7 @@ body {
 }
 
 #image {
-    background-image: url("/assets/image/forca.png");
+    background-image: url("./assets/image/forca.png");
     width: 234px;
     height: 272px;
     background-repeat: no-repeat;
