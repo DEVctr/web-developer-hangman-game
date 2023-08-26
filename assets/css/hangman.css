@@ -23,9 +23,7 @@ body {
     background-color: rgb(207, 205, 205);
     border-radius: 25px;
 }
-
-#image {
-    background-image: url("./assets/image/forca.png");
+*#image {
     width: 234px;
     height: 272px;
     background-repeat: no-repeat;

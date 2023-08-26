@@ -152,6 +152,7 @@ function compareLists(letter) {
 function loadImage() {
     switch (losePoints) {
         case 5:
+            document.getElementById('image-00').remove()
             document.getElementById('image').style.background = "url('./assets/image/forca01.png')";
             break;
         case 4:
